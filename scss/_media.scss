@@ -271,4 +271,53 @@
   }
 }
 
-// Landscape
+// Landscape mobile
+@media (max-width: 568px) {
+  #header-home {
+    #main-nav ul li {
+      padding-left: 1.6rem;
+      a {
+        font-size: 0.9rem;
+      }
+    }
+    #logo {
+      width: 88px;
+      height: 24px;
+    }
+  }
+
+  #home-b {
+    .item-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #home-c {
+    .item-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #home-d {
+    .box-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #footer {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "logo . . . . . ."
+        "location location location location location location location"
+        "contact . . . . . ."
+        "more . . . . . ."
+        "policy . . . . . ."
+        "social . . . . . .";
+    }
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: 1, 1fr;
+    gap: 1.5rem;
+  }
+}
