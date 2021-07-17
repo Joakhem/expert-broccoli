@@ -754,3 +754,185 @@ p {
     grid-template-areas: "logo . . . . . ." "location location location location location location location" "contact . . . . . ." "more . . . . . ." "policy . . . . . ." "social . . . . . .";
   }
 }
+
+@media (max-width: 580px) {
+  #header-home #main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+  }
+  #header-home #main-nav ul li {
+    padding-left: 1.6rem;
+  }
+  #header-home #main-nav ul li a {
+    font-size: 0.9rem;
+  }
+  #header-home #logo {
+    width: 88px;
+    height: 24px;
+  }
+  #home-a {
+    display: flex;
+  }
+  #home-a .hero {
+    position: relative;
+    background-color: #0b1523;
+    overflow: hidden;
+  }
+  #home-a .hero::before {
+    content: "";
+    position: absolute;
+    background-image: url(/images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+  }
+  #home-a .hero .content-wrap * {
+    z-index: 4;
+  }
+  #home-a img {
+    width: 100%;
+    margin: auto;
+  }
+  #home-a h1 {
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  #home-a p {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #home-b .item-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-c .item-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-d .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #section-e .section-content {
+    align-content: center;
+    text-align: center;
+  }
+  #section-e .section-content .btn-1 {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #section-e .section-content h5 {
+    display: none;
+  }
+  #section-e .section-wrap .section-content .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #section-e .section-wrap .section-content .form input {
+    height: 3.2rem;
+    width: 100%;
+    padding-left: 3rem;
+    border: none;
+    border-radius: 50px;
+  }
+  #footer {
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: 1, 1fr;
+    gap: 1.5rem;
+  }
+  #footer .grid-container {
+    display: grid;
+    grid-template-areas: "logo . . . . . ." "location location location location location location location" "contact . . . . . ." "more . . . . . ." "policy . . . . . ." "social . . . . . .";
+  }
+  #footer .item-1 img {
+    width: 90%;
+  }
+  #footer .item-2 {
+    margin-bottom: 2rem;
+  }
+  #footer .item-2 h3 {
+    display: block;
+  }
+  #footer .item-3 {
+    margin-bottom: 2.5rem;
+  }
+  #footer .item-4 {
+    margin-bottom: 2.5rem;
+  }
+  #footer .item-4 li {
+    margin-bottom: 1.65rem;
+  }
+  #footer .item-5 li {
+    margin-bottom: 1.65rem;
+  }
+  #footer .item-6 {
+    margin-top: 2.5rem;
+  }
+  #footer .item-6 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #footer .item-6 ul li {
+    margin: 1rem;
+  }
+  #footer .item-6 ul li a {
+    margin-left: 1rem;
+  }
+  #footer .grid-container .item-6 li a {
+    padding: 0.7rem;
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  #footer .grid-container .item-6 li a .fa-2x {
+    font-size: 1em;
+  }
+  #footer .container-1 {
+    margin: auto 1rem auto 1rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 568px) {
+  #header-home #main-nav ul li {
+    padding-left: 1.6rem;
+  }
+  #header-home #main-nav ul li a {
+    font-size: 0.9rem;
+  }
+  #header-home #logo {
+    width: 88px;
+    height: 24px;
+  }
+  #home-b .item-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-c .item-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-d .box-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #footer {
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: 1, 1fr;
+    gap: 1.5rem;
+  }
+  #footer .grid-container {
+    display: grid;
+    grid-template-areas: "logo . . . . . ." "location location location location location location location" "contact . . . . . ." "more . . . . . ." "policy . . . . . ." "social . . . . . .";
+  }
+}
