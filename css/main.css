@@ -714,4 +714,9 @@ p {
   #footer .grid-container .item-6 li a .fa-2x {
     font-size: 1em;
   }
+  #footer .container-1 {
+    margin: auto 1rem auto 1rem;
+    padding: 1rem;
+    overflow: hidden;
+  }
 }
