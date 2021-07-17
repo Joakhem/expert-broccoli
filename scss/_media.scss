@@ -1,0 +1,270 @@
+// tablet and Small Phone
+@media (max-width: 900px) {
+  #home-a {
+    img {
+      width: 100%;
+    }
+  }
+
+  #home-c {
+    .item_img {
+      max-width: 100%;
+    }
+  }
+
+  #home-d {
+    .quotes img {
+      width: 70%;
+      position: relative;
+      top: 10px;
+    }
+    h3 {
+      font-size: 0.9rem;
+    }
+  }
+
+  #home-e {
+    input {
+      height: 3.2rem;
+      // width: 100%;
+      padding-left: 3rem;
+      // padding: 0.8rem 23rem 0.8rem 2.9rem;
+      border: none;
+      border-radius: 50px;
+      padding-right: 19rem;
+    }
+  }
+
+  #section-e {
+    input {
+      height: 3.2rem;
+      width: 65%;
+      padding-left: 3rem;
+      border: none;
+      border-radius: 50px;
+    }
+  }
+
+  #footer {
+    h3,
+    a {
+      font-size: 0.7rem;
+      font-weight: normal;
+    }
+
+    .item-3,
+    .item-4 a,
+    .item-5 a {
+      font-size: 0.7rem;
+    }
+
+    .item-1 img {
+      width: 100%;
+    }
+
+    .py-3 {
+      padding: 1rem 0;
+    }
+
+    .grid-container .item-6 li a {
+      padding: 0.7rem;
+      border: 0.2rem solid #fff;
+      border-radius: 50%;
+      margin-left: 1rem;
+      .fa-2x {
+        font-size: 1em;
+      }
+    }
+  }
+  #footer .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "logo . . . . ." "location location contact more policy social";
+    justify-content: center;
+    align-content: center;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #header-home {
+    #main-nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      text-align: center;
+      align-content: center;
+    }
+
+    #main-nav ul li {
+      padding-left: 1.6rem;
+      a {
+        font-size: 0.9rem;
+      }
+    }
+    #logo {
+      width: 88px;
+      height: 24px;
+    }
+  }
+
+  #home-a {
+    display: flex;
+    .hero {
+      position: relative;
+      background-color: $dark-color;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(/images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+      }
+      .content-wrap * {
+        z-index: 4;
+      }
+    }
+  }
+  #home-a {
+    img {
+      width: 100%;
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0 10px;
+      font-size: 2rem;
+    }
+    p {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  #home-b {
+    .item-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #home-c {
+    .item-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #home-d {
+    .box-wrap {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #section-e {
+    .section-content {
+      align-content: center;
+      text-align: center;
+
+      .btn-1 {
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      h5 {
+        display: none;
+      }
+    }
+    .section-wrap .section-content .form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      input {
+        height: 3.2rem;
+        width: 100%;
+        padding-left: 3rem;
+        // padding: 0.8rem 23rem 0.8rem 2.9rem;
+        border: none;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  #footer {
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "logo . . . . . ."
+        "location location location location location location location"
+        "contact . . . . . ."
+        "more . . . . . ."
+        "policy . . . . . ."
+        "social . . . . . .";
+    }
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: 1, 1fr;
+    gap: 1.5rem;
+
+    .item-1 {
+      img {
+        width: 90%;
+      }
+    }
+    .item-2 {
+      margin-bottom: 2rem;
+      h3 {
+        display: block;
+      }
+    }
+    .item-3 {
+      margin-bottom: 2.5rem;
+    }
+    .item-4 {
+      margin-bottom: 2.5rem;
+      li {
+        margin-bottom: 1.65rem;
+      }
+    }
+    .item-5 {
+      li {
+        margin-bottom: 1.65rem;
+      }
+    }
+
+    .item-6 {
+      margin-top: 2.5rem;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li {
+          margin: 1rem;
+
+          a {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    .grid-container .item-6 li a {
+      padding: 0.7rem;
+      border: 0.2rem solid #fff;
+      border-radius: 50%;
+      margin-left: 1rem;
+      .fa-2x {
+        font-size: 1em;
+      }
+    }
+    
+  }
+}
+
+// Landscape
