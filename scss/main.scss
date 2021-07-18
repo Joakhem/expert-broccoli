@@ -13,6 +13,7 @@ body {
   // background-color: $main-color;
   color: $white-color;
   line-height: 1.4;
+  background-color: #181f2a;
 }
 
 a {
@@ -49,6 +50,7 @@ h4 {
 }
 p {
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nav-wrap {
@@ -63,7 +65,7 @@ p {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 2rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   align-content: center;
 
@@ -289,15 +291,15 @@ p {
       }
       input {
         height: 3.2rem;
-        width: 65%;
-        padding-left: 3rem;
+        width: 60%;
+        padding-left: 2rem;
         // padding: 0.8rem 23rem 0.8rem 2.9rem;
         border: none;
         border-radius: 50px;
       }
 
       .btn-1 {
-        padding: 1.2rem 2.5rem;
+        padding: 1rem 1.5rem;
         border-radius: 50px;
         background-color: $medium-color;
         border: none;
@@ -312,8 +314,9 @@ p {
       }
 
       h5 {
-        margin-left: -310px;
         color: red;
+        margin-left: -260px;
+        margin-top: 0.2rem;
       }
     }
   }
@@ -357,6 +360,7 @@ p {
 
         h3 {
           margin-left: 0.8rem;
+          margin-right: 0.9rem;
         }
       }
       img {
@@ -395,9 +399,10 @@ p {
         justify-content: space-between;
         a {
           // margin-left: 2rem;
-          padding: 0.7rem;
+          padding: 0.3rem;
           border: 0.2rem solid #fff;
           border-radius: 50%;
+          margin: 0.2rem;
           :hover {
             color: $medium-color;
           }
@@ -405,7 +410,7 @@ p {
       }
     }
     a {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }

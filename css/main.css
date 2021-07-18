@@ -5,7 +5,7 @@
 }
 
 .container-1 {
-  margin: auto 2.6rem auto 3.75rem;
+  margin: auto 1.5rem auto 1.5rem;
   padding: 1rem;
   overflow: hidden;
 }
@@ -124,6 +124,7 @@ body {
   font-family: "Roboto Slab", serif;
   color: #ffff;
   line-height: 1.4;
+  background-color: #181f2a;
 }
 
 a {
@@ -156,6 +157,7 @@ h4 {
 
 p {
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nav-wrap {
@@ -170,7 +172,7 @@ p {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.2rem 2rem;
+  padding: 0.2rem 1rem;
   text-align: center;
   align-content: center;
 }
@@ -392,14 +394,14 @@ p {
 
 #section-e .section-wrap .section-content input {
   height: 3.2rem;
-  width: 65%;
-  padding-left: 3rem;
+  width: 60%;
+  padding-left: 2rem;
   border: none;
   border-radius: 50px;
 }
 
 #section-e .section-wrap .section-content .btn-1 {
-  padding: 1.2rem 2.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 50px;
   background-color: #6ad7d1;
   border: none;
@@ -414,8 +416,9 @@ p {
 }
 
 #section-e .section-wrap .section-content h5 {
-  margin-left: -310px;
   color: red;
+  margin-left: -260px;
+  margin-top: 0.2rem;
 }
 
 #footer .grid-container {
@@ -457,6 +460,7 @@ p {
 
 #footer .grid-container .item-3_ h3 {
   margin-left: 0.8rem;
+  margin-right: 0.9rem;
 }
 
 #footer .grid-container .item-3 img {
@@ -496,9 +500,10 @@ p {
 }
 
 #footer .grid-container .item-6 li a {
-  padding: 0.7rem;
+  padding: 0.3rem;
   border: 0.2rem solid #fff;
   border-radius: 50%;
+  margin: 0.2rem;
 }
 
 #footer .grid-container .item-6 li a :hover {
@@ -506,15 +511,52 @@ p {
 }
 
 #footer .grid-container a {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 900px) {
+  #header-home .nav-wrap {
+    height: 4rem;
+  }
+  #header-home .nav-wrap #logo {
+    height: 2rem;
+    width: 6rem;
+  }
+  #header-home .nav-wrap #main-nav {
+    margin-top: -1.2rem;
+  }
+  #header-home .nav-wrap #main-nav ul li {
+    padding-left: 1.6rem;
+  }
   #home-a img {
     width: 100%;
   }
+  #home-b h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  #home-b p {
+    font-size: 0.6rem;
+  }
   #home-c .item_img {
     max-width: 100%;
+  }
+  #home-c h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  #home-c p {
+    font-size: 0.65rem;
+  }
+  #home-c #home-c .item a:hover {
+    text-decoration: underline;
+  }
+  #home-c .item a {
+    font-size: 0.5rem;
+  }
+  #home-c .item a img {
+    margin-top: 12px;
+    width: 0.6rem;
   }
   #home-d .quotes img {
     width: 70%;
@@ -522,7 +564,26 @@ p {
     top: 10px;
   }
   #home-d h3 {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
+  }
+  #home-d h5 {
+    font-size: 0.4rem;
+  }
+  #home-d h6 {
+    font-size: 0.3rem;
+  }
+  #home-d .box-wrap .box {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  #home-d .box-wrap .box .profile img {
+    width: 2rem;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  #home-d .container-2 {
+    margin: auto 1.5rem;
+    padding: 0.6rem;
   }
   #home-e input {
     height: 3.2rem;
@@ -726,7 +787,7 @@ p {
     padding-left: 1.6rem;
   }
   #header-home #main-nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   #header-home #logo {
     width: 88px;
@@ -767,7 +828,7 @@ p {
     padding-left: 1.6rem;
   }
   #header-home #main-nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   #header-home #logo {
     width: 88px;
@@ -800,13 +861,14 @@ p {
   }
   #home-a h1 {
     margin: 0 10px;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   #home-a p {
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 1rem;
   }
   #home-b .item-wrap {
     display: grid;
@@ -842,6 +904,12 @@ p {
     padding-left: 3rem;
     border: none;
     border-radius: 50px;
+  }
+  #section-e h1 {
+    margin-bottom: 2rem;
+  }
+  #section-e h1 {
+    font-size: 2rem;
   }
   #footer {
     grid-template-rows: 1, 1fr;
@@ -897,18 +965,18 @@ p {
     font-size: 1em;
   }
   #footer .container-1 {
-    margin: auto 1rem auto 1rem;
+    margin: auto 1rem auto 0.5rem;
     padding: 1rem;
     overflow: hidden;
   }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 330px) {
   #header-home #main-nav ul li {
     padding-left: 1.6rem;
   }
   #header-home #main-nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
   }
   #header-home #logo {
     width: 88px;
